@@ -170,31 +170,11 @@ export default function AthleteZone({ position, active }) {
       {/* Mountain scenery */}
       <Mountain position={[-2, -0.5, -1]} scale={1.2} />
 
-      {/* State Player badge */}
-      <Float speed={2} floatIntensity={0.3}>
-        <group position={[2, 2, 0]}>
-          <mesh>
-            <circleGeometry args={[0.3, 16]} />
-            <meshStandardMaterial
-              color="#fbbf24"
-              emissive="#fbbf24"
-              emissiveIntensity={0.3}
-              metalness={0.7}
-              roughness={0.3}
-            />
-          </mesh>
-          <FloatingText
-            text="★"
-            position={[0, 0.02, 0.01]}
-            fontSize={0.25}
-            color="#1a1a2e"
-          />
-        </group>
-      </Float>
+
 
       {/* Zone label */}
       <FloatingText
-        text="State Player"
+        text="Athlete"
         position={[0, 3.5, 0]}
         fontSize={0.3}
         color="#f87171"

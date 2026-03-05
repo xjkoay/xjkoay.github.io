@@ -13,7 +13,8 @@ import EngineerZone from './zones/EngineerZone'
 import ArtistZone from './zones/ArtistZone'
 import TraderZone from './zones/TraderZone'
 import AthleteZone from './zones/AthleteZone'
-import LifestyleZone from './zones/LifestyleZone'
+import ChefZone from './zones/ChefZone'
+import AnimeZone from './zones/AnimeZone'
 import CEOZone from './zones/CEOZone'
 
 /* 
@@ -27,9 +28,10 @@ const ZONE_POSITIONS = [
   [-5, 0, -45],     // artist
   [5, -2, -60],     // trader
   [-6, 1, -75],     // athlete
-  [6, 0, -90],      // lifestyle
-  [0, -1, -105],    // ceo
-  [0, 0, -120],     // contact
+  [6, 0, -90],      // chef
+  [-5, -1, -105],   // anime
+  [0, 0, -120],     // ceo
+  [0, 0, -135],     // contact
 ]
 
 export default function Scene({ scrollProgress, activeSection }) {
@@ -86,30 +88,15 @@ export default function Scene({ scrollProgress, activeSection }) {
       {/* Floating particles */}
       <Particles count={200} />
 
-      {/* Hero area — floating name text */}
-      <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
-        <FloatingText
-          text="KOAY XIAN JING"
-          position={[0, 2, -2]}
-          fontSize={0.8}
-          color="#a855f7"
-        />
-        <FloatingText
-          text="Scientist · Engineer · Artist · CEO"
-          position={[0, 1, -2]}
-          fontSize={0.25}
-          color="#60a5fa"
-        />
-      </Float>
-
       {/* Character Zones */}
       <ScientistZone position={ZONE_POSITIONS[1]} active={activeSection === 1} />
       <EngineerZone position={ZONE_POSITIONS[2]} active={activeSection === 2} />
       <ArtistZone position={ZONE_POSITIONS[3]} active={activeSection === 3} />
       <TraderZone position={ZONE_POSITIONS[4]} active={activeSection === 4} />
       <AthleteZone position={ZONE_POSITIONS[5]} active={activeSection === 5} />
-      <LifestyleZone position={ZONE_POSITIONS[6]} active={activeSection === 6} />
-      <CEOZone position={ZONE_POSITIONS[7]} active={activeSection === 7} />
+      <ChefZone position={ZONE_POSITIONS[6]} active={activeSection === 6} />
+      <AnimeZone position={ZONE_POSITIONS[7]} active={activeSection === 7} />
+      <CEOZone position={ZONE_POSITIONS[8]} active={activeSection === 8} />
 
       {/* Post-processing */}
       <EffectComposer>

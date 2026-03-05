@@ -80,8 +80,8 @@ const SECTIONS = [
     label: 'Athlete',
     icon: '🏓',
     title: 'Athlete & Sportsman',
-    subtitle: 'State-Level Table Tennis Player',
-    description: 'A former state-level table tennis player who still thrives on competition. Beyond the table, an active outdoor enthusiast — from tennis, badminton, and squash to hiking, swimming, and hitting the gym. Movement is life.',
+    subtitle: 'Table Tennis · Outdoor Sports',
+    description: 'A table tennis player who thrives on competition. Beyond the table, an active outdoor enthusiast — from tennis, badminton, and squash to hiking, swimming, and hitting the gym. Movement is life.',
     tags: [
       { text: 'Table Tennis', variant: 'red' },
       { text: 'Tennis', variant: 'emerald' },
@@ -93,20 +93,34 @@ const SECTIONS = [
     align: 'left'
   },
   {
-    id: 'lifestyle',
-    label: 'Lifestyle',
+    id: 'chef',
+    label: 'Chef',
     icon: '🍳',
-    title: 'Chef & Otaku',
-    subtitle: 'Malaysian Cuisine · Anime Connoisseur',
-    description: 'A home chef mastering the art of Malaysian cooking — from perfect nasi lemak to a rich repertoire of local delicacies. Off the stove, a devoted anime fan with Doraemon and One Piece as all-time favorites. Netflix is the second kitchen.',
+    title: 'Home Chef',
+    subtitle: 'Malaysian Cuisine Enthusiast',
+    description: 'A home chef mastering the art of Malaysian cooking — from the perfect nasi lemak with sambal that hits just right, to a rich repertoire of local delicacies. The kitchen is where chemistry meets culture.',
     tags: [
       { text: 'Nasi Lemak', variant: 'gold' },
       { text: 'Malaysian Food', variant: 'red' },
+      { text: 'Home Cooking', variant: 'emerald' },
+      { text: 'Local Delicacies', variant: '' },
+    ],
+    align: 'right'
+  },
+  {
+    id: 'anime',
+    label: 'Anime',
+    icon: '🎬',
+    title: 'Anime & Netflix',
+    subtitle: 'Doraemon · One Piece · Binge Watcher',
+    description: 'A devoted anime fan with Doraemon and One Piece as all-time favorites. From Luffy\'s boundless spirit to Doraemon\'s magical gadgets — anime is the fuel for imagination. Netflix is the second home after the lab.',
+    tags: [
       { text: 'Doraemon', variant: 'blue' },
       { text: 'One Piece', variant: '' },
       { text: 'Netflix', variant: 'pink' },
+      { text: 'Anime', variant: 'cyan' },
     ],
-    align: 'right'
+    align: 'left'
   },
   {
     id: 'ceo',
@@ -121,7 +135,7 @@ const SECTIONS = [
       { text: 'Strategy', variant: 'gold' },
       { text: 'Transformation', variant: 'emerald' },
     ],
-    align: 'left'
+    align: 'right'
   },
   {
     id: 'contact',
