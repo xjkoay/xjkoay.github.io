@@ -15,6 +15,7 @@ import TraderZone from './zones/TraderZone'
 import AthleteZone from './zones/AthleteZone'
 import ChefZone from './zones/ChefZone'
 import AnimeZone from './zones/AnimeZone'
+import TravelerZone from './zones/TravelerZone'
 import CEOZone from './zones/CEOZone'
 
 /* 
@@ -30,8 +31,9 @@ const ZONE_POSITIONS = [
   [-6, 1, -75],     // athlete
   [6, 0, -90],      // chef
   [-5, -1, -105],   // anime
-  [0, 0, -120],     // ceo
-  [0, 0, -135],     // contact
+  [6, -1, -120],    // traveler
+  [-5, 0, -135],    // ceo
+  [0, 0, -150],     // contact
 ]
 
 export default function Scene({ scrollProgress, activeSection }) {
@@ -96,7 +98,8 @@ export default function Scene({ scrollProgress, activeSection }) {
       <AthleteZone position={ZONE_POSITIONS[5]} active={activeSection === 5} />
       <ChefZone position={ZONE_POSITIONS[6]} active={activeSection === 6} />
       <AnimeZone position={ZONE_POSITIONS[7]} active={activeSection === 7} />
-      <CEOZone position={ZONE_POSITIONS[8]} active={activeSection === 8} />
+      <TravelerZone position={ZONE_POSITIONS[8]} active={activeSection === 8} />
+      <CEOZone position={ZONE_POSITIONS[9]} active={activeSection === 9} />
 
       {/* Post-processing */}
       <EffectComposer>

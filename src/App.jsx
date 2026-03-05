@@ -123,6 +123,21 @@ const SECTIONS = [
     align: 'left'
   },
   {
+    id: 'traveler',
+    label: 'Travel',
+    icon: '✈️',
+    title: 'World Traveler',
+    subtitle: 'Globetrotter · Cultural Explorer',
+    description: 'An avid traveler having explored over 16 countries including the US, UK, Japan, Australia, and across Europe & Asia. From the magic of Disney to the history of Washington DC and the Brooklyn Bridge. Travel broadens the mind and inspires creativity.',
+    tags: [
+      { text: '16+ Countries', variant: 'blue' },
+      { text: 'USA & UK', variant: 'emerald' },
+      { text: 'Europe', variant: 'pink' },
+      { text: 'Asia', variant: 'gold' },
+    ],
+    align: 'right'
+  },
+  {
     id: 'ceo',
     label: 'CEO',
     icon: '🚀',
@@ -135,7 +150,7 @@ const SECTIONS = [
       { text: 'Strategy', variant: 'gold' },
       { text: 'Transformation', variant: 'emerald' },
     ],
-    align: 'right'
+    align: 'left'
   },
   {
     id: 'contact',
